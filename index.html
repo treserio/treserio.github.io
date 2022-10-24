@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
     <title>Tres Serio</title>
 </head>
 <body>
-    <div>Hola Shìjiè</div>
-    <a href="https://docs.google.com/document/d/1RknMzNgHOz5l2a_MJLWJ9Ptj4xI85w_y/edit?usp=sharing&ouid=116796331630683177798&rtpof=true&sd=true">
-        <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/83606464_10163323071200085_8106077981752950784_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Y7YBJybWjjQAX-3iSmS&_nc_ht=scontent-dfw5-1.xx&oh=00_AT91GD59ljfHVCXMFDRdSZpSBhvsK3KGL2s3IwUWfGY1hA&oe=6378871E" alt="Tres Serio on Rock">
-    </a>
-    <div><a href="https://github.com/treserio">Github</a></div>
-    <div><a href="https://www.linkedin.com/in/frank-serio/">Linkedin</a></div>
-    <div><a href="https://github.com/treserio/holbertonschool-web_react">Project</a></div>
+    <div class="container">
+        <!-- sway1, 2, 3, 4 -->
+        <div class="box TL hidden">Box 1
+            <a href="https://github.com/treserio">Github</a>
+        </div>
+        <div class="box T hidden">Box 2
+            <a href="https://docs.google.com/document/d/1RknMzNgHOz5l2a_MJLWJ9Ptj4xI85w_y/edit?usp=sharing&ouid=116796331630683177798&rtpof=true&sd=true">
+                Resume
+            </a>
+        </div>
+        <div class="box TR hidden">Box 3
+            <a href="https://www.linkedin.com/in/frank-serio/">Linkedin</a>
+        </div>
+        <div class="box L hidden">Box 4
+            <a href="https://github.com/treserio/holbertonschool-web_react">Project</a>
+        </div>
+        <div class="center" onclick=moveSliders()>
+                        Box 5
+        </div>
+        <div class="expander-TL"><img src="./closeBlue.png" width="20px" height="20px">text n stuff and things</div>
+        <!-- sway1, 2, 3, 4 -->
+        <div class="box R hidden">Box 6</div>
+        <div class="box BL hidden">Box 7</div>
+        <div class="box B hidden">Box 8</div>
+        <div class="box BR hidden">Box 9</div>
+    </div>
+
 </body>
 </html>
 

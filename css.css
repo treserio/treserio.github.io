@@ -1,0 +1,219 @@
+:root {
+    --center: calc(50% - 105px);
+    --locked: 8%;
+}
+
+@keyframes float1 {
+    33% { transform: rotateY(8deg) rotateZ(1.75deg) }
+    66% { transform: rotateY(-8deg) rotateZ(-1.75deg) }
+}
+
+@keyframes float2 {
+    25% { transform: rotateY(-8deg) rotateZ(-1.75deg) }
+    75% { transform: rotateY(8deg) rotateZ(1.75deg) }
+}
+
+@keyframes float3 {
+    30% { transform: rotateY(8deg) rotateZ(1.75deg) }
+    70% { transform: rotateY(-8deg) rotateZ(-1.75deg) }
+}
+
+@keyframes float4 {
+    40% { transform: rotateY(-8deg) rotateZ(1.75deg) }
+    60% { transform: rotateY(8deg) rotateZ(-1.75deg) }
+}
+
+body {
+    background-color: #222222;
+}
+
+[class^=box] {
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    border: solid 5px rgba(8, 50, 113);
+    border-radius: 10px;
+
+    background-color: #222222;
+    text-align: center;
+    color: rgb(28, 158, 223);
+    transition: top 2s, left 2s, right 2s, bottom 2s, opacity 1.5s;
+}
+
+.recenter {
+    position: absolute;
+    z-index: 3;
+    height: 200px;
+    width: 200px;
+    border: solid 5px rgba(8, 50, 113);
+    border-radius: 10px;
+    opacity: 0;
+
+    background-color: #222222;
+    text-align: center;
+    color: rgb(28, 158, 223);
+    transition: top 0.5s, left 0.5s, right 0.5s, bottom 0.5s, opacity 0.5s ease-out 0.25s;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0%;
+}
+
+.sway1 {
+    animation-delay: 2s;
+    animation-name: float1;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+
+.sway2 {
+    animation-delay: 2s;
+    animation-name: float2;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+.sway3 {
+    animation-delay: 2s;
+    animation-name: float3;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+
+.sway4 {
+    animation-delay: 2s;
+    animation-name: float4;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.container {
+    background-color: #222222;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center {
+    cursor: pointer;
+    background-image: url("https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/83606464_10163323071200085_8106077981752950784_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Y7YBJybWjjQAX-3iSmS&_nc_ht=scontent-dfw5-1.xx&oh=00_AT91GD59ljfHVCXMFDRdSZpSBhvsK3KGL2s3IwUWfGY1hA&oe=6378871E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 220px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+
+.TL {
+    top: var(--center);
+    left: var(--center);
+}
+
+.slide-TL {
+    top: var(--locked);
+    left: var(--locked);
+}
+
+.T {
+    top: var(--center);
+}
+
+.slide-T {
+    top: var(--locked);
+}
+
+.TR {
+    top: var(--center);
+    right: var(--center);
+}
+
+.slide-TR {
+    top: var(--locked);
+    right: var(--locked);
+}
+
+.L {
+    left: var(--center);
+}
+
+.slide-L {
+    left: var(--locked) ;
+}
+
+.R {
+    right: var(--center);
+}
+
+.slide-R {
+    right: var(--locked) ;
+}
+
+.BL {
+    bottom: var(--center);
+    left: var(--center);
+}
+
+.slide-BL {
+    bottom: var(--locked);
+    left: var(--locked);
+}
+
+.B {
+    bottom: var(--center);
+}
+
+.slide-B {
+    bottom: var(--locked);
+}
+
+.BR {
+    bottom: var(--center);
+    right: var(--center);
+}
+
+.slide-BR {
+    bottom: var(--locked);
+    right: var(--locked);
+}
+
+[class^=expander] {
+    position: absolute;
+    z-index: 10;
+    height: 200px;
+    width: 200px;
+    border: solid 5px rgba(8, 50, 113);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+
+    background-color: #222222;
+    text-align: center;
+    color: rgb(28, 158, 223);
+    transition: top 2s, left 2s, right 2s, bottom 2s, opacity 0.5s, width 2s, height 2s;
+    bottom: var(--center);
+    left: var(--center);
+}
+
+.blowUp {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    border: solid 5px rgba(8, 50, 113);
+    border-radius: 10px;
+    visibility: visible;
+    opacity: 1;
+
+    background-color: #222222;
+    text-align: center;
+    color: rgb(28, 158, 223);
+    transition: top 2s, left 2s, right 2s, bottom 2s, opacity 0.5s, width 2s, height 2s;
+}
