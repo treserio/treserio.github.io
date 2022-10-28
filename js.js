@@ -6,8 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     boxes[i].onclick = (event) => {
       event.target.className = `recenter ${boxList[i]}`;
       const exp = document.querySelector(`.expander-${boxList[i]}`);
-      console.log(exp)
-      exp.className = (`blowUp`);
+      // console.log('exp', exp)
+      exp.className = 'blowUp';
+      exp.firstElementChild.onclick = (event) => {
+        // console.log('closeEvent', event);
+        event.target.parentNode.className = `expander-${boxList[i]}`;
+        // console.log(event.target.parentNode);
+        moveSliders();
+      }
     }
   }
 });
@@ -15,19 +21,27 @@ document.addEventListener("DOMContentLoaded", () => {
 function moveSliders() {
   // spiral order
   const l = document.querySelector('.L');
-  if (l) setTimeout(() => {l.classList = 'box slide-L sway4'}, 0);
+  // if (l) setTimeout(() => {l.classList = 'box slide-L sway4'}, 0);
+  if (l) l.classList = 'box slide-L';
   const tl = document.querySelector('.TL');
-  if (tl) setTimeout(() => {tl.classList = 'box slide-TL sway1'}, 90);
+  // if (tl) setTimeout(() => {tl.classList = 'box slide-TL'}, 100);
+  if (tl) tl.classList = 'box slide-TL';
   const t = document.querySelector('.T');
-  if (t) setTimeout(() => {t.classList = 'box slide-T sway2'}, 180);
+  // if (t) setTimeout(() => {t.classList = 'box slide-T'}, 200);
+  if (t) t.classList = 'box slide-T';
   const tr = document.querySelector('.TR');
-  if (tr) setTimeout(() => {tr.classList = 'box slide-TR sway3'}, 270);
+  // if (tr) setTimeout(() => {tr.classList = 'box slide-TR'}, 300);
+  if (tr) tr.classList = 'box slide-TR';
   const r = document.querySelector('.R');
-  if (r) setTimeout(() => {r.classList = 'box slide-R sway1'}, 360);
+  // // if (r) setTimeout(() => {r.classList = 'box slide-R'}, 400);
+  if (r) r.classList = 'box slide-R';
   const br = document.querySelector('.BR');
-  if (br) setTimeout(() => {br.classList = 'box slide-BR sway4'}, 450);
+  // if (br) setTimeout(() => {br.classList = 'box slide-BR'}, 500);
+  if (br) br.classList = 'box slide-BR';
   const b = document.querySelector('.B');
-  if (b) setTimeout(() => {b.classList = 'box slide-B sway3'}, 540);
+  // if (b) setTimeout(() => {b.classList = 'box slide-B'}, 600);
+  if (b) b.classList = 'box slide-B'
   const bl = document.querySelector('.BL');
-  if (bl) setTimeout(() => {bl.classList = 'box slide-BL sway2'}, 630);
+  // if (bl) setTimeout(() => {bl.classList = 'box slide-BL'}, 700);
+  if (bl) bl.classList = 'box slide-BL';
 }

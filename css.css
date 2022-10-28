@@ -1,6 +1,6 @@
 :root {
     --center: calc(50% - 105px);
-    --locked: 8%;
+    --locked: 2%;
 }
 
 @keyframes float1 {
@@ -21,6 +21,294 @@
 @keyframes float4 {
     40% { transform: rotateY(-8deg) rotateZ(1.75deg) }
     60% { transform: rotateY(8deg) rotateZ(-1.75deg) }
+}
+
+@keyframes fading-L {
+    10% {
+       -webkit-mask-image: linear-gradient(to right, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to right, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-TL {
+    10% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-T {
+    10% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-TR {
+    10% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-R {
+    10% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to left, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-BR {
+    10% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-B {
+    10% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to top, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
+}
+
+@keyframes fading-BL {
+    10% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 15%);
+    }
+    20% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 30%);
+    }
+    30% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 45%);
+    }
+    40% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 60%);
+    }
+    50% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 75%);
+    }
+    60% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 90%);
+    }
+    70% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 105%);
+    }
+    80% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 155%);
+    }
+    90% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 210%);
+    }
+    95% {
+        -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 265%);
+    }
+    100% {
+        -webkit-mask-image: none;
+    }
 }
 
 body {
@@ -53,7 +341,7 @@ body {
     background-color: #222222;
     text-align: center;
     color: rgb(28, 158, 223);
-    transition: top 0.5s, left 0.5s, right 0.5s, bottom 0.5s, opacity 0.5s ease-out 0.25s;
+    transition: top 0.5s, left 0.5s, right 0.5s, bottom 0.5s, opacity 0.5s ease 0.25s;
 }
 
 .hidden {
@@ -93,7 +381,7 @@ body {
     background-color: #222222;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -120,6 +408,10 @@ body {
 .slide-TL {
     top: var(--locked);
     left: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-TL, float1;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .T {
@@ -128,6 +420,10 @@ body {
 
 .slide-T {
     top: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-T, float2;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .TR {
@@ -138,6 +434,10 @@ body {
 .slide-TR {
     top: var(--locked);
     right: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-TR, float3;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .L {
@@ -145,7 +445,11 @@ body {
 }
 
 .slide-L {
-    left: var(--locked) ;
+    left: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-L, float4;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .R {
@@ -153,17 +457,26 @@ body {
 }
 
 .slide-R {
-    right: var(--locked) ;
+    right: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-R, float1;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .BL {
     bottom: var(--center);
     left: var(--center);
+
 }
 
 .slide-BL {
     bottom: var(--locked);
     left: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-BL, float2;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .B {
@@ -172,6 +485,10 @@ body {
 
 .slide-B {
     bottom: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-B, float3;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 .BR {
@@ -182,6 +499,10 @@ body {
 .slide-BR {
     bottom: var(--locked);
     right: var(--locked);
+    animation-delay: 0s, 2s;
+    animation-name: fading-BR, float4;
+    animation-duration: 1.95s, 9s;
+    animation-iteration-count: 1, infinite;
 }
 
 [class^=expander] {
@@ -191,13 +512,12 @@ body {
     width: 200px;
     border: solid 5px rgba(8, 50, 113);
     border-radius: 10px;
-    opacity: 0;
-    visibility: hidden;
-
     background-color: #222222;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
     color: rgb(28, 158, 223);
-    transition: top 2s, left 2s, right 2s, bottom 2s, opacity 0.5s, width 2s, height 2s;
+    transition: top 0.45s, left 0.45s, right 0.45s, bottom 0.45s, opacity 0.6s, width 0.45s, height 0.45s, visibility 0.6s;
     bottom: var(--center);
     left: var(--center);
 }
@@ -205,8 +525,9 @@ body {
 .blowUp {
     position: absolute;
     z-index: 10;
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    margin: 0 0 1px 1px;
     border: solid 5px rgba(8, 50, 113);
     border-radius: 10px;
     visibility: visible;
@@ -215,5 +536,7 @@ body {
     background-color: #222222;
     text-align: center;
     color: rgb(28, 158, 223);
-    transition: top 2s, left 2s, right 2s, bottom 2s, opacity 0.5s, width 2s, height 2s;
+    transition: top 2s ease 0.2s, left 2s ease 0.2s, right 2s ease 0.2s, bottom 2s ease 0.2s, opacity 0.5s ease 0.2s, width 2s ease 0.2s, height 2s ease 0.2s;
+    bottom: 0%;
+    left: 0%;
 }
