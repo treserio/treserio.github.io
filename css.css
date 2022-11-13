@@ -524,6 +524,8 @@ body {
 
 .blowUp {
     position: absolute;
+    /* Safari doesn't support z-index */
+    transform: translateZ(50px);
     z-index: 10;
     height: calc(100% - 12px);
     width: calc(100% - 12px);
@@ -532,6 +534,9 @@ body {
     border-radius: 10px;
     visibility: visible;
     opacity: 1;
+
+    /* figure out a way to calculate expanding font size */
+    /* font-size: calc(height*.5); */
 
     background-color: #222222;
     text-align: center;
