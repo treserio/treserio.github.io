@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
       const exp = document.querySelector(`.expander-${boxList[i]}`);
       // console.log('exp', exp)
       exp.className = 'blowUp';
-      exp.firstElementChild.onclick = (event) => {
+      exp.firstElementChild.children[1].onclick = (event) => {
         // console.log('closeEvent', event);
-        event.target.parentNode.className = `expander-${boxList[i]}`;
+        // set the class name of the parent of our X element to the correct expander
+        event.target.parentNode.parentNode.className = `expander-${boxList[i]}`;
         // console.log(event.target.parentNode);
         moveSliders();
       }
