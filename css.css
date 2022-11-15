@@ -401,15 +401,29 @@ body {
 
 .center {
     cursor: pointer;
-    background-image: url("https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/83606464_10163323071200085_8106077981752950784_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Y7YBJybWjjQAX-3iSmS&_nc_ht=scontent-dfw5-1.xx&oh=00_AT91GD59ljfHVCXMFDRdSZpSBhvsK3KGL2s3IwUWfGY1hA&oe=6378871E");
+    /* background-image: url("./assets/Profile.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
+    text-align: center;
     height: 220px;
     width: 220px;
     border-radius: 10px;
+    /* padding-top: 15px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(28, 158, 223);
+    letter-spacing: 0.369mm;
 }
 
+.centerImage {
+    background-image: url("./assets/Profile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90%;
+    width: 100%;
+}
 
 .TL {
     top: var(--center);
