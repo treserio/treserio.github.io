@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // console.log(event.target.parentNode);
         moveSliders();
       }
+      setTimeout(() => exp.className = 'blowUp', 2000);
     }
   }
 });
