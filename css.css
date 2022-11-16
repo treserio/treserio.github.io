@@ -360,34 +360,6 @@ body {
     opacity: 0%;
 }
 
-/* .sway1 {
-    animation-delay: 2s;
-    animation-name: float1;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
-}
-
-.sway2 {
-    animation-delay: 2s;
-    animation-name: float2;
-    animation-duration: 14s;
-    animation-iteration-count: infinite;
-}
-
-.sway3 {
-    animation-delay: 2s;
-    animation-name: float3;
-    animation-duration: 11s;
-    animation-iteration-count: infinite;
-}
-
-.sway4 {
-    animation-delay: 2s;
-    animation-name: float4;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;
-} */
-
 .container {
     background-color: #222222;
     position: relative;
@@ -572,10 +544,10 @@ body {
     height: calc(100% - 12px);
 } */
 
-iframe {
+/* iframe {
     width: 98%;
     height: 85%;
-}
+} */
 
 .closeBtn {
     cursor: pointer;
@@ -603,10 +575,17 @@ iframe {
     width: 100%;
 }
 
-.resumeIcon {
-    height: 90px;
+[class^=icon] {
     margin-bottom: 5px;
     pointer-events: none;
+}
+
+.iconResume {
+    height: 90px;
+}
+
+.iconSkills {
+    height: 95px;
 }
 
 .button {
@@ -621,4 +600,9 @@ iframe {
 .button:hover {
     background-color: rgba(28, 158, 223, .125);
     color: rgb(28, 158, 223);
+}
+
+.box:hover > [class^=icon] {
+    filter: invert(1);
+    opacity: 80%;
 }
