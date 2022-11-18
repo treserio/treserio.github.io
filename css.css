@@ -323,7 +323,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
     height: 200px;
     width: 200px;
     border: solid 5px rgba(8, 50, 113);
@@ -335,6 +334,12 @@ body {
     color: rgb(28, 158, 223);
     transition: top 2s, left 2s, right 2s, bottom 2s, opacity 1.5s;
 }
+
+.box:hover > [class^=icon] {
+    filter: invert(1);
+    opacity: 80%;
+}
+
 
 .recenter {
     position: absolute;
@@ -377,6 +382,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; */
+    z-index: 1;
+    transform: translateZ(1px);
     text-align: center;
     height: 220px;
     width: 220px;
@@ -404,6 +411,7 @@ body {
     animation-name: fading-TL, float1;
     animation-duration: 1.95s, 12s;
     animation-iteration-count: 1, infinite;
+    /* perspective-origin: bottom right; */
 }
 
 .T {
@@ -416,6 +424,7 @@ body {
     animation-name: fading-T, float2;
     animation-duration: 1.95s, 19s;
     animation-iteration-count: 1, infinite;
+    /* perspective-origin: center; */
 }
 
 .TR {
@@ -430,6 +439,7 @@ body {
     animation-name: fading-TR, float3;
     animation-duration: 1.95s, 14s;
     animation-iteration-count: 1, infinite;
+    /* perspective-origin: bottom left; */
 }
 
 .L {
@@ -514,10 +524,13 @@ body {
     top: var(--center);
     left: var(--center);
     /* base height is 200px, blow up atm is 700px 2/7 * bigfont = littlefont */
-    font-size: 4px;
+    font-size: 2.75px;
 }
 
 .blowUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     /* Safari doesn't support z-index */
     transform: translateZ(50px);
@@ -553,7 +566,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 0.6%;
-    right: 0.8%;
+    right: 0.75%;
     height: 3%;
     filter: invert(100%);
 }
@@ -562,17 +575,28 @@ body {
     transform: scale(120%)
 }
 
+.modalHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 97%;
+    /* padding-bottom: 1%; */
+    /* border-bottom: solid 2px rgba(227, 97, 32, .6); */
+}
+
+.modalHeader h3 {
+    margin: 0 0 10px 0;
+}
+
 .modalBody {
-    margin: 0 1.5% 1% 1.5%;
+    display: block;
+    width: 97%;
+    height: 93%;
+    padding-top: 6px;
 }
 
-.blowUp h3 {
-    margin: 0 0 1% 1.5%;
-}
-
-.resume {
-    margin-top: 0.5%;
-    width: 100%;
+.headerLinks {
+    margin-bottom: 10px;
 }
 
 [class^=icon] {
@@ -602,7 +626,39 @@ body {
     color: rgb(28, 158, 223);
 }
 
-.box:hover > [class^=icon] {
-    filter: invert(1);
-    opacity: 80%;
+hr {
+    color:rgba(227, 97, 32, 0.8);
+    width: 99%;
+    margin: 0;
+}
+
+.thought {
+    height: 27.5%;
+    float: left;
+    transition: height 2s ease 0.2s;
+    border-radius: 10px;
+    margin-right: 2%;
+    /* transition: height 2s ease 0.2s; */
+}
+
+.clouds {
+    height: 30%;
+    float: right;
+    margin-left: 2%;
+    /* transition: height 2s ease 0.2s; */
+    border-radius: 10px;
+}
+
+.resume {
+    margin-top: 0.5%;
+    width: 100%;
+}
+
+h4 {
+    /* margin: 4px 0 4px 0; */
+    margin: 0;
+}
+
+p {
+    margin: 11px 0;
 }
