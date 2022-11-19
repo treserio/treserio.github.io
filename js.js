@@ -7,7 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
       event.target.className = `recenter ${boxList[i]}`;
       const exp = document.querySelector(`.expander-${boxList[i]}`);
       // console.log('exp', exp)
-      exp.className = 'blowUp';
+      // list of sections that need a vertical scroll bar
+      if (['T'].includes(boxList[i])) {
+        exp.className = 'blowUp yScroll';
+      } else {
+        exp.className = 'blowUp';
+      }
       exp.firstElementChild.children[1].onclick = (event) => {
         // console.log('closeEvent', event);
         // set the class name of the parent of our X element to the correct expander
@@ -15,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         // console.log(event.target.parentNode);
         moveSliders();
       }
-      setTimeout(() => exp.className = 'blowUp', 2000);
     }
   }
 });
