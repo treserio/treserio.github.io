@@ -3,6 +3,17 @@
     --locked: 2%;
     --containerH: 700px;
     --expandTop: 245px;
+
+    /* Colors */
+    --lightBlue: rgb(28, 158, 223);
+    --hoverLightBlue: rgba(28, 158, 223, .125);
+
+    --borderBlue: rgba(8, 50, 113);
+    --borderBlue50: rgba(8, 50, 113, 0.5);
+
+    --orange: rgb(227, 97, 32);
+    --orange80: rgba(227, 97, 32, 0.8);
+    --orange30: rgba(227, 97, 32, 0.5);
 }
 
 @keyframes float1 {
@@ -315,6 +326,8 @@
 
 body {
     background-color: #222222;
+    display: flex;
+    justify-content: center;
 }
 
 [class^=box] {
@@ -364,11 +377,6 @@ body {
 .hidden {
     visibility: hidden;
     opacity: 0%;
-}
-
-body {
-    display: flex;
-    justify-content: center;
 }
 
 .container {
@@ -551,13 +559,17 @@ body {
     visibility: visible;
     opacity: 1;
     /* figure out a way to calculate expanding font size */
-    font-size: 18px;
+    font-size: 20px;
 
     background-color: #222222;
     color: rgb(28, 158, 223);
     transition: top 2s ease 0.2s, left 2s ease 0.2s, right 2s ease 0.2s, bottom 2s ease 0.2s, opacity 0.5s ease 0.2s, width 2s ease 0.2s, height 2s ease 0.2s, height 2s ease 0.2s, font-size 2s ease 0.2s;
     top: 0%;
     left: 0%;
+}
+
+.hmin {
+    min-height: 700px;
 }
 
 .yScroll {
@@ -572,6 +584,14 @@ body {
     width: 98%;
     height: 85%;
 } */
+
+.modalTitle {
+    margin-bottom: 10px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .closeBtn {
     cursor: pointer;
@@ -593,13 +613,18 @@ body {
     justify-content: center;
     width: 97%;
     margin-top: 4px;
+    margin-bottom: 10px;
     /* padding-bottom: 1%; */
     /* border-bottom: solid 2px rgba(227, 97, 32, .6); */
 }
 
 .modalHeader h3 {
-    margin: 0 0 10px 0;
+    margin: 0;
 }
+
+/* .headerLinks {
+    margin-bottom: 10px;
+} */
 
 .modalBody {
     display: block;
@@ -608,9 +633,25 @@ body {
     padding-top: 6px;
 }
 
-.headerLinks {
-    margin-bottom: 10px;
+.flexRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    max-height: 90px;
 }
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* ##### Box Icons ##### */
 
 [class^=icon] {
     margin-bottom: 5px;
@@ -627,11 +668,11 @@ body {
 
 .button {
     background-color: rgb(28, 158, 223);
+    color: #222222;
     border-radius: 0.5rem;
     padding: 0.25em 0.5em;
     text-align: center;
     text-decoration: none;
-    color: #222222;
 }
 
 .button:hover {
@@ -674,4 +715,56 @@ h4 {
 
 p {
     margin: 11px 0;
+}
+
+/* ##### SKILLS ##### */
+
+.skillBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* border: solid 5px rgba(8, 50, 113); */
+    background-color: var(--hoverLightBlue);
+    height: 100%;
+    width: 12%;
+    max-height: 90px;
+    max-width: 105px;
+    /* min-width: 105px; */
+    padding: 0 2%;
+}
+
+.skillIcon {
+    height: 75%;
+    /* max-height: 90px; */
+    /* max-width: 90px; */
+}
+
+.skillBox:hover {
+    background-color: var(--borderBlue);
+
+}
+
+.skillBox[skill]:hover::after,
+.skillBox[skill]:focus::after {
+    content: attr(skill);
+
+    position: absolute;
+    top: -34px;
+    white-space: nowrap;
+
+    background-color: var(--hoverLightBlue);
+    color: var(--lightBlue);
+    border-radius: 4px;
+    box-shadow: 0 0 6px 2px var(--orange30);
+    font-size: 20px;
+    padding: 3px 5px;
+}
+
+.skillBox[skill] {
+    position: relative;
+}
+
+.shiftR {
+    margin-right: -25px;
 }
