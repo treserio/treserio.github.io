@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // console.log(event.target.parentNode);
         moveSliders();
       }
-      setTimeout(() => exp.classList.add('hmin'), 2000);
+      // setTimeout(() => exp.classList.add('hmin'), 2000);
     }
   }
 });
