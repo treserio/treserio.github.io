@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/icon-digitalPresence.png">
     <link rel="stylesheet" href="css.css">
     <script src="js.js"></script>
     <title>Tres Serio</title>
@@ -58,8 +59,8 @@
             >
         </div>
         <hr>
-        <div class="flexColumn">
-            <div class="flexRow">
+        <div class="skillColumn">
+            <div class="skillRow">
                 <div data-skill="HTML" class="skillBox">
                     <img class="skillIcon" src="./assets/skills/skill-html5.png">
                 </div>
@@ -76,7 +77,7 @@
                     <img class="skillIcon" src="./assets/skills/skill-react.png">
                 </div>
             </div>
-            <div class="flexRow">
+            <div class="skillRow">
                 <div data-skill="Bootstrap" class="skillBox">
                     <img class="skillIcon" src="./assets/skills/skill-bootstrap.png" >
                 </div>
@@ -93,7 +94,7 @@
                     <img class="skillIcon" src="./assets/skills/skill-flutter.png">
                 </div>
             </div>
-            <div class="flexRow">
+            <div class="skillRow">
                 <div data-skill="Django" class="skillBox">
                     <img class="skillIcon" src="./assets/skills/skill-django.png">
                 </div>
@@ -110,7 +111,7 @@
                     <img class="skillIcon" src="./assets/skills/skill-git.png">
                 </div>
             </div>
-            <div class="flexRow">
+            <div class="skillRow">
                 <div data-skill="MySQL" class="skillBox">
                     <img class="skillIcon" src="./assets/skills/skill-mysql.png">
                 </div>
@@ -127,7 +128,7 @@
                     <img class="skillIcon" src="./assets/skills/skill-monty.png">
                 </div>
             </div>
-            <div class="flexRow">
+            <div class="skillRow">
                 <div data-skill="C" class="skillBox">
                     <img class="skillIcon" src="./assets/skills/skill-C.png">
                 </div>
@@ -157,21 +158,21 @@
                 class="closeBtn"
             >
             <div class="headerLinks">
-                <a class="button" href="https://docs.google.com/document/d/1RknMzNgHOz5l2a_MJLWJ9Ptj4xI85w_y/export?format=pdf">pdf</a>
+                <a class="button" href="https://docs.google.com/document/d/1x2AR-c7vFeTl8yZq5YTla05dO37alCzVEwN7aRzdYnE/export?format=pdf">pdf</a>
                 |
-                <a class="button" href="https://docs.google.com/document/d/10uk51jO4ezA9_5dfj6slN4093LRGiEJG/edit?ouid=116796331630683177798&rtpof=true&sd=true">Google doc</a>
+                <a class="button" href="https://docs.google.com/document/d/1x2AR-c7vFeTl8yZq5YTla05dO37alCzVEwN7aRzdYnE/edit?usp=sharing" target="_blank">Google doc</a>
             </div>
         </div>
         <hr>
         <div class="modalBody">
-            <img class="resume" src="./assets/imgs/Resume3.png">
+            <img class="resume" src="./assets/imgs/Resume.png">
         </div>
     </div>
     <div class="expander-TR">
         <div class="modalHeader">
             <div class="modalTitle">
                 <h2>Who am I?</h2>
-                <i>I'm glad you asked why</i>
+                <i>someone on whom you can rely</i>
             </div>
             <img
                 src="./assets/icons/icon-close.png"
@@ -180,13 +181,13 @@
         </div>
         <hr>
         <div class="modalBody">
-            <img class="thought" src="./assets/imgs/my_thoughts.jpg" >
+            <img class="wai-img-thought" src="./assets/imgs/my_thoughts.jpg" >
             <h4>Welcome,</h4>
             <p>I’ve worked in various IT positions over the years, and I’ve found I enjoy the problem-solving and camaraderie that a development environment provides. To that end, I spent a large portion of my free time before Holberton studying programming languages. When my charm and determination weren’t enough to win me the type of positions I had hoped for, I decided I needed to either go back to school and finish my bachelor's or take a chance on Holberton. It’s been a tumultuous two years of practice and study with my cohort at Holberton.
             </p>
             <p>Without instructors, the curriculum fosters a collaborative environment among your cohort as you work through projects. It is much more like a work environment than a university, which fits me well, as I’ve always been a self-starter. There are several instances where I was employed in a non-development role and took it upon myself to automate routine processes in my free time. I used bash scripts, password-protected executables written in C#, and reverse-engineered Adobe’s Outlook extension for mass email conversion.
             </p>
-            <img class="clouds" src="./assets/imgs/Reaching.jpeg">
+            <img class="wai-img-clouds" src="./assets/imgs/Reaching.jpeg">
             <p>During my time at Holberton, I was privileged to have been a student tutor. I was tasked with explaining algorithms, providing live coding examples, and assisting in debugging code for the next cohort.
             </p>
             <p></p>
@@ -200,7 +201,7 @@
         <div class="modalHeader">
             <div class="modalTitle">
                 <h2>Digital Presence</h2>
-                <i>is still me, in essence</i>
+                <i>it's me, in essence</i>
             </div>
             <img
                 src="./assets/icons/icon-close.png"
@@ -223,8 +224,66 @@
             >
         </div>
         <hr>
-        <a href="https://github.com/treserio">Github</a>
-        <a href="https://www.linkedin.com/in/frank-serio/">Linkedin</a>
+        <form
+          id="contactForm"
+        >
+          <div class="inputGroup sm">
+            <input
+              id="contactCompany"
+              type="text"
+              placeholder=" "
+              required
+            >
+            <label
+              for="contactCompany"
+            >
+              Company:
+            </label>
+          </div>
+          <div class="inputGroup sm">
+            <input
+              id="contactEmail"
+              type="email"
+              placeholder=" "
+              required
+            >
+            <label
+              for="contactEmail"
+            >
+              Email:
+            </label>
+          </div>
+          <div class="inputGroup sm">
+            <input
+              id="contactPhone"
+              type="tel"
+              placeholder=" "
+              pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+              required
+            >
+            <label
+              for="contactPhone"
+            >
+              Phone:
+            </label>
+          </div>
+          <div class="inputGroup lg">
+            <textarea
+              id="contactMessage"
+              placeholder=" "
+              required
+            ></textarea>
+            <label
+              for="contactMessage"
+            >
+              Message:
+            </label>
+          </div>
+          <input
+            type="submit"
+            value="Send"
+          >
+        </form>
     </div>
     <div class="expander-BL">
         <div class="modalHeader">

@@ -1,0 +1,307 @@
+@keyframes float1 {
+  33% { transform: rotateY(14deg) rotateZ(1.75deg) }
+  66% { transform: rotateY(-14deg) rotateZ(-1.75deg) }
+}
+
+@keyframes float2 {
+  25% { transform: rotateY(-20deg) rotateZ(-1.75deg) }
+  75% { transform: rotateY(20deg) rotateZ(1.75deg) }
+}
+
+@keyframes float3 {
+  30% { transform: rotateY(16deg) rotateZ(1.75deg) }
+  70% { transform: rotateY(-16deg) rotateZ(-1.75deg) }
+}
+
+@keyframes float4 {
+  38% { transform: rotateY(-18deg) rotateZ(-1.75deg) }
+  62% { transform: rotateY(18deg) rotateZ(1.75deg) }
+}
+
+@keyframes fading-L {
+  10% {
+     -webkit-mask-image: linear-gradient(to right, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to right, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-TL {
+  10% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to bottom right, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-T {
+  10% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-TR {
+  10% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to bottom left, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-R {
+  10% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to left, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-BR {
+  10% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to top left, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-B {
+  10% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to top, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}
+
+@keyframes fading-BL {
+  10% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 15%);
+  }
+  20% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 30%);
+  }
+  30% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 45%);
+  }
+  40% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 60%);
+  }
+  50% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 75%);
+  }
+  60% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 90%);
+  }
+  70% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 105%);
+  }
+  80% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 155%);
+  }
+  90% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 210%);
+  }
+  95% {
+      -webkit-mask-image: linear-gradient(to top right, black 0%, transparent 265%);
+  }
+  100% {
+      -webkit-mask-image: none;
+  }
+}

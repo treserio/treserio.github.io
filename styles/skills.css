@@ -1,0 +1,80 @@
+.skillRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  max-height: 90px;
+}
+
+.skillColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+.skillBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* border: solid 3px var(--borderBlue); */
+  background-color: var(--hoverLightBlue);
+  height: 100%;
+  width: 12%;
+  max-height: 90px;
+  padding: 0 2%;
+}
+
+@media (min-width: 1150px) {
+  .skillBox {
+    width: 8%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .skillBox {
+    width: 5%;
+  }
+}
+
+.skillIcon {
+  height: 75%;
+}
+
+.skillBox:hover {
+  background-color: var(--borderBlue);
+}
+
+.skillBox:hover>.skillIcon {
+  transform: rotateY(360deg);
+  transition: transform 0.75s ease;
+}
+
+.skillBox[data-skill]:hover::before,
+.skillBox[data-skill]:focus::before {
+  content: attr(data-skill);
+
+  position: absolute;
+  top: -34px;
+  white-space: nowrap;
+
+  background-color: var(--hoverLightBlue);
+  color: var(--lightBlue);
+  border-radius: 4px;
+  box-shadow: 0 0 6px 2px var(--orange30);
+  font-size: 20px;
+  padding: 3px 5px;
+}
+
+.skillBox[data-skill] {
+  position: relative;
+}
+
+/* doesn't look like this was used anywhere */
+.shiftR {
+  margin-right: -25px;
+}

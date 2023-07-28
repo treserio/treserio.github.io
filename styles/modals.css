@@ -1,0 +1,104 @@
+/* setup for expanding boxes */
+[class^=expander] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  height: 200px;
+  /* min-height: 200px; */
+  width: 200px;
+  border: solid 5px rgba(8, 50, 113);
+  border-radius: 10px;
+  background-color: #222222;
+  /* text-align: center; */
+  opacity: 0;
+  /* overflow-y: scroll; */
+  visibility: hidden;
+  color: var(--lightBlue);
+  transition: top 0.45s, left 0.45s, right 0.45s, bottom 0.45s, opacity 0.6s, width 0.45s, height 0.45s, visibility 0.6s, font-size 0.45s;
+  /* transition: top 3s, left 3s, right 3s, bottom 3s, opacity 6s, width 3s, height 3s, visibility 6s, font-size 3s; */
+  top: var(--expandTop);
+  left: var(--center);
+  /* base height is 200px, blow up atm is 700px 2/7 * bigfont = littlefont */
+  font-size: 2.75px;
+}
+
+.blowUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  /* Safari doesn't support z-index */
+  transform: translateZ(50px);
+  z-index: 10;
+  height: calc(100% - 12px);
+  /* min-height: 200px; */
+  width: calc(100% - 12px);
+  margin: 0 0 1px 1px;
+  border: solid 5px rgba(8, 50, 113);
+  border-radius: 10px;
+  visibility: visible;
+  opacity: 1;
+  /* figure out a way to calculate expanding font size */
+  font-size: 18px;
+
+  background-color: #222222;
+  color: var(--lightBlue);
+  transition: top 2s ease 0.2s, left 2s ease 0.2s, right 2s ease 0.2s, bottom 2s ease 0.2s, opacity 0.5s ease 0.2s, width 2s ease 0.2s, height 2s ease 0.2s, height 2s ease 0.2s, font-size 2s ease 0.2s;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+}
+
+@media (max-height: 700px) {
+  .blowUp {
+      height: 700px;
+  }
+}
+
+.modalTitle {
+  margin-bottom: 10px;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 20px; */
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 97%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  /* padding-bottom: 1%; */
+  /* border-bottom: solid 2px rgba(227, 97, 32, .6); */
+}
+
+.modalHeader h2 {
+  margin: 0;
+}
+
+.modalBody {
+  display: block;
+  width: 97%;
+  height: 93%;
+  padding-top: 6px;
+}
+
+.closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 0.6%;
+  right: 0.75%;
+  height: 3%;
+  filter: invert(100%);
+  max-height: 25px;
+}
+
+.closeBtn:hover {
+  transform: scale(120%)
+}
+
