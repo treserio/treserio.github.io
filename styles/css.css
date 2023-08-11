@@ -700,12 +700,6 @@ h3 {
     color: rgb(28, 158, 223);
 }
 
-hr {
-    border-color:rgba(227, 97, 32, 0.8);
-    width: 99%;
-    margin: 0;
-}
-
 .thought {
     height: 27.5%;
     float: left;

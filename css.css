@@ -3,6 +3,7 @@
 @import "styles/modals.css";
 @import "styles/skills.css";
 @import "styles/contactMe.css";
+@import "styles/digitalPresence.css";
 
 :root {
   --center: calc(50% - 105px);
@@ -57,12 +58,6 @@ body {
   color: var(--lightBlue);
 }
 
-hr {
-  border-color: rgba(227, 97, 32, 0.8);
-  width: 99%;
-  margin: 0;
-}
-
 h3 {
   margin: 0;
 }
@@ -102,7 +97,7 @@ p {
 /* Resume Img */
 /* ########## */
 .resume {
-  margin-top: 0.5%;
+  /* margin-top: 0.5%; */
   width: 100%;
 }
 

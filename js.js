@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const exp = document.querySelector(`.expander-${boxList[i]}`);
       // console.log('exp', exp)
       // list of sections that need a vertical scroll bar
-      if (['T'].includes(boxList[i])) {
+      if (['T', 'L'].includes(boxList[i])) {
         exp.className = 'blowUp yScroll';
       } else {
         exp.className = 'blowUp';
